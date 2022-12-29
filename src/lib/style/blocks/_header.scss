@@ -1,0 +1,111 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.2);
+    &__logo{
+        width: 150px;
+        height: 35px;
+        object-fit: cover;
+    }
+    &__list{
+        display: flex;
+        gap: 50px;
+        &-text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #3D3D3D;
+        }
+    }
+    &__link{
+        text-decoration: none;
+    }
+    &__media{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &-input{
+            display: none;
+            width: 240px;
+            height: 30px;
+            background: #F8F8F8;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            padding-left: 22px;
+        }
+       
+        &-search{
+            cursor: pointer;
+        }
+       &-karzinka{
+           position: relative;
+           z-index: 1;
+           cursor: pointer;
+       }
+    }
+    &__btn{
+        width: 100px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #46A358;
+        border-radius: 6px; 
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background: #46A315;
+    }
+    &__btn span{
+        padding-left: 5px;
+    }
+}
+.bagle{
+    position: absolute;
+    z-index: 2;
+    right: -2px;
+    width: 14px;
+    height: 14px;
+    background-color: #46A358;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: #fff;
+    text-align: center;
+}
+// @media (max-width:1200px) {
+//     .header{
+//         padding: 25px 30px;
+//     }
+// }
+@media (max-width:960px) {
+    .header{
+        justify-content: space-between;
+        &__list{
+            display: none;
+        }
+        &__media{
+            &-search{
+                display: none;
+            }
+            &-karzinka{
+                display: none;
+            }
+        }
+        &__btn{
+            display: none;
+        }
+    }
+}

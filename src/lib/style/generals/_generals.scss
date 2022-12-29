@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cera Pro';
+    width: 100%;
+}
+#root{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:  #3D3D3D;;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

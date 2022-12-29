@@ -1,0 +1,33 @@
+.categoryCantent {
+    display: flex;
+    justify-content: space-between;
+
+    &__allBtn {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__btn {
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    &__btn-open {
+        font-style: normal;
+        background-color: #fff;
+        cursor: pointer;
+        padding-bottom: 7px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 16px;
+        color: #46A358;
+        border: none;
+        border-bottom: 2px solid #46A358;
+    }
+
+    &__select {
+        border: none;
+        outline: none;
+    }
+}
